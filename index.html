@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-<title>AI-Powered Researcher Academy</title>
-<meta name="description" content="AI-Powered Researcher Academy — the integrated AI roadmap for modern researchers, led by Dr. Nermin Yusuf." />
+<title>Scholara | AI-Powered Research Training Series</title>
+<meta name="description" content="Scholara — the integrated AI roadmap for modern researchers, led by Dr. Nermin Yusuf." />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,6 +61,7 @@
 
   [data-lucide] { display: inline-block; }
 </style>
+<script src="scholara-logo.js" defer></script>
 </head>
 
 <body class="min-h-screen selection:bg-primary/20 selection:text-primary">
@@ -70,7 +71,7 @@
     <div class="container mx-auto px-6 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <!-- REPLACE: images/logo.png -->
-        <img src="images/logo.png" alt="AI-Powered Researcher Academy Logo" class="h-14 w-56 object-contain object-left" onerror="this.style.display='none'">
+        <scholara-logo static aria-label="Scholara" class="block w-56"></scholara-logo>
       </div>
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
         <a href="#curriculum" class="text-foreground/80 hover:text-primary transition-colors">Curriculum</a>
@@ -100,9 +101,7 @@
 
     <!-- ============ HERO ============ -->
     <section class="relative min-h-[90vh] flex items-center overflow-hidden">
-      <div class="absolute inset-0 z-0">
-        <!-- REPLACE: images/hero-bg.jpg -->
-        <img src="images/hero-bg.jpg" alt="AI and technology background" class="w-full h-full object-cover opacity-30" onerror="this.style.display='none'">
+      <div class="absolute inset-0 z-0" id="hero-net">
         <div class="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10"></div>
       </div>
 
@@ -110,7 +109,7 @@
         <div class="max-w-4xl">
           <div class="mb-8 reveal">
             <!-- REPLACE: images/logo.png -->
-            <img src="images/logo.png" alt="AI-Powered Researcher Academy" class="w-[420px] md:w-[540px] h-auto object-contain" onerror="this.style.display='none'">
+            <scholara-logo bg-target="#hero-net" aria-label="Scholara" class="block w-[320px] sm:w-[420px] md:w-[540px] max-w-full"></scholara-logo>
           </div>
           <div class="flex items-center gap-2 mb-6 reveal">
             <span class="px-3 py-1 rounded-full bg-accent/20 text-primary text-xs font-bold uppercase tracking-wider">
@@ -137,14 +136,14 @@
       <div class="container mx-auto px-6">
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-12 reveal">
-            <h2 class="text-4xl font-serif text-primary mb-4">About the Academy</h2>
+            <h2 class="text-4xl font-serif text-primary mb-4">About Scholara</h2>
             <div class="w-16 h-0.5 bg-accent mx-auto"></div>
           </div>
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
             <div class="space-y-6 text-foreground/80 text-lg leading-relaxed">
-              <p>The <span class="font-semibold text-primary">AI-Powered Researcher Academy</span> is a specialized training series of modules designed to transform the way postgraduate students and researchers work, write, publish, and present in the age of AI.</p>
-              <p>These modules are specifically engineered to be a comprehensive roadmap for the modern researcher. Rather than treating AI as isolated tools — and instead of relying on general LLM tools such as ChatGPT, which are not specialized for research purposes — the academy introduces an <span class="font-semibold text-primary">integrated ecosystem of AI-powered research systems</span> to support researchers across every stage of their academic lifecycle.</p>
+              <p><span class="font-semibold text-primary">Scholara</span> is a specialized training series of modules designed to transform the way postgraduate students and researchers work, write, publish, and present in the age of AI.</p>
+              <p>These modules are specifically engineered to be a comprehensive roadmap for the modern researcher. Rather than treating AI as isolated tools — and instead of relying on general LLM tools such as ChatGPT, which are not specialized for research purposes — Scholara introduces an <span class="font-semibold text-primary">integrated ecosystem of AI-powered research systems</span> to support researchers across every stage of their academic lifecycle.</p>
             </div>
 
             <div class="space-y-6 text-foreground/80 text-lg leading-relaxed">
@@ -382,10 +381,10 @@
             </div>
           </div>
           <div class="lg:w-1/2 reveal">
-            <h2 class="text-4xl md:text-5xl font-serif mb-4">Meet Your Instructor</h2>
+            <h2 class="text-4xl md:text-5xl font-serif mb-4">Meet the Developer</h2>
             <h3 class="text-2xl text-accent font-serif italic mb-8">Dr. Nermin Yusuf</h3>
             <p class="text-lg leading-relaxed text-primary-foreground/90 mb-6">With over 15 years in higher education, Dr. Nermin Yusuf is a university lecturer and researcher specializing in research methodology, tech-enabled learning, academic and scientific writing, and cognitive approaches to language processing.</p>
-            <p class="text-lg leading-relaxed text-primary-foreground/90 mb-8">This academy is the distillation of years spent guiding students through the complexities of academic research, now supercharged by ethical, powerful AI workflows.</p>
+            <p class="text-lg leading-relaxed text-primary-foreground/90 mb-8">Scholara is the distillation of years spent guiding students through the complexities of academic research, now supercharged by ethical, powerful AI workflows.</p>
             <a href="https://sites.google.com/view/nermin-yusuf/home" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-foreground/40 text-primary-foreground font-semibold hover:bg-primary-foreground/10 transition-colors duration-200">
               Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </a>
@@ -562,7 +561,7 @@
         <div class="text-center mb-12 reveal">
           <h2 class="text-4xl font-serif text-primary mb-4">Contact Us</h2>
           <div class="w-16 h-0.5 bg-accent mx-auto mb-6"></div>
-          <p class="text-foreground/70 text-lg">Have a question about the academy or private consultations? Send us a message and we'll get back to you.</p>
+          <p class="text-foreground/70 text-lg">Have a question about Scholara or private consultations? Send us a message and we'll get back to you.</p>
         </div>
 
         <form id="contactForm" class="reveal bg-background border border-border rounded-2xl p-8 md:p-10 space-y-6">
@@ -606,7 +605,7 @@
         <p class="text-xl text-foreground/80 mb-6">Stop drowning and working harder, and start researching smarter. Register your interest today to receive more details and secure your spot in the next cohort.</p>
         <p class="text-base text-foreground/60 mb-10 italic">Private one-on-one consultation sessions with Dr. Nermin Yusuf are also available — mention your interest in the form.</p>
         <a href="#" onclick="openForm(); return false;" class="inline-flex items-center justify-center h-16 px-10 text-xl bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-colors">
-          Apply for the Academy
+          Apply to Scholara
         </a>
       </div>
     </section>
@@ -616,9 +615,9 @@
   <footer class="bg-primary text-primary-foreground/60 py-12 border-t border-primary-foreground/10">
     <div class="container mx-auto px-6 text-center">
       <i data-lucide="brain" class="w-8 h-8 mx-auto mb-6 text-primary-foreground/40"></i>
-      <p class="font-serif text-lg mb-2 text-primary-foreground">AI-Powered Researcher Academy</p>
+      <p class="font-serif text-lg mb-2 text-primary-foreground">Scholara</p>
       <p class="text-sm">Led by Dr. Nermin Yusuf</p>
-      <p class="text-sm mt-8" id="copyrightYear">&copy; 2026 AI-Powered Researcher Academy. All rights reserved.</p>
+      <p class="text-sm mt-8" id="copyrightYear">&copy; 2026 Scholara. All rights reserved.</p>
     </div>
   </footer>
 
@@ -632,7 +631,7 @@
 
     // ---- Footer year ----
     document.getElementById('copyrightYear').innerHTML =
-      `&copy; ${new Date().getFullYear()} AI-Powered Researcher Academy. All rights reserved.`;
+      `&copy; ${new Date().getFullYear()} Scholara. All rights reserved.`;
 
     // ---- Mobile menu ----
     const mobileBtn = document.getElementById('mobileMenuBtn');
@@ -654,12 +653,12 @@
 
     // ---- FAQ ----
     const faqs = [
-      { q: "Who is this program designed for?", a: "This academy is built for postgraduate students (Master's and PhD) and early-career researchers who want to work smarter using AI — whether you are just starting your research journey or are deep in writing and publication." },
+      { q: "Who is this program designed for?", a: "Scholara is built for postgraduate students (Master's and PhD) and early-career researchers who want to work smarter using AI — whether you are just starting your research journey or are deep in writing and publication." },
       { q: "Do I need prior AI or technical experience?", a: "No technical background is required. The program is designed to be accessible to all researchers. You will be guided step-by-step through the AI tools relevant to each module." },
       { q: "Are the sessions live or pre-recorded?", a: "All sessions are delivered live online via Microsoft Teams. Each module consists of 3–5 hands-on sessions of 90 to 120 minutes each, with direct interaction with Dr. Nermin Yusuf." },
       { q: "What language are the sessions delivered in?", a: "The program is fully bilingual — sessions are available in both English and Arabic. You can choose the language that suits you best when you register." },
       { q: "Can I enroll in just one module instead of the full program?", a: "Absolutely. You can enroll in a single module that addresses your most pressing research challenge and earn a module certificate. You can also choose individual sessions if you have a very specific need." },
-      { q: "Will I receive a certificate?", a: "Yes. You receive a certificate of participation for each module you complete. If you complete all 5 modules, you earn a certificate of full AI-Powered Researcher Academy program completion." },
+      { q: "Will I receive a certificate?", a: "Yes. You receive a certificate of participation for each module you complete. If you complete all 5 modules, you earn a certificate of full Scholara program completion." },
       { q: "Are private one-on-one sessions available?", a: "Yes. Private consultation sessions with Dr. Nermin Yusuf are available for personalised guidance on your specific research project, thesis, or publication goals. Mention your interest when you register." },
       { q: "Can I join the program if I am not a postgraduate student?", a: "Yes. The program is open to anyone who would benefit from it. Whether you are an academic, a professional researcher, or someone in a research-adjacent role, you are welcome to join as long as the content is relevant to your work and goals." },
       { q: "How do I register?", a: "Click any 'Register Interest' button on this page to fill in the interest form. Dr. Nermin Yusuf's team will follow up with cohort dates, pricing, and enrollment details." }
